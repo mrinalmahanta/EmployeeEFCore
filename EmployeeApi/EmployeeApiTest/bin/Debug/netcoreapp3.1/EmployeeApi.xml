@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EmployeeApi</name>
+    </assembly>
+    <members>
+        <member name="T:EmployeeApi.BusinessLogic.ProcessEmployee">
+            <summary>
+            Proccess Employee
+            </summary>
+        </member>
+        <member name="M:EmployeeApi.BusinessLogic.ProcessEmployee.#ctor(EmployeeApi.DataAccess.IApplicationContext)">
+            <summary>
+            Proccess Employee Const
+            </summary>
+        </member>
+        <member name="M:EmployeeApi.BusinessLogic.ProcessEmployee.AddEmployee(EmployeeApi.Entities.Employees)">
+            <summary>
+            Add Employee
+            </summary>
+        </member>
+        <member name="M:EmployeeApi.BusinessLogic.ProcessEmployee.DeleteEmployee(EmployeeApi.Entities.Employees)">
+            <summary>
+            Delete Employee
+            </summary>
+        </member>
+        <member name="M:EmployeeApi.BusinessLogic.ProcessEmployee.GetAllEmployees">
+            <summary>
+            Get All Employees
+            </summary>
+        </member>
+        <member name="M:EmployeeApi.BusinessLogic.ProcessEmployee.GetEmployee(System.String)">
+            <summary>
+            Get single Employee
+            </summary>
+        </member>
+        <member name="M:EmployeeApi.BusinessLogic.ProcessEmployee.SearchEmployees(System.String,System.String)">
+            <summary>
+            search Employee
+            </summary>
+        </member>
+        <member name="M:EmployeeApi.BusinessLogic.ProcessEmployee.UpdateEmployee(System.String,EmployeeApi.Entities.Employees)">
+            <summary>
+            update Employee
+            </summary>
+        </member>
+        <member name="M:EmployeeApi.BusinessLogic.ProcessEmployee.ProcessEmployeeDeatils(System.Collections.Generic.List{EmployeeApi.Entities.Employees},System.Collections.Generic.List{EmployeeApi.Entities.EmployeeAddress})">
+            <summary>
+             Process employee details
+            </summary>
+        </member>
+        <member name="M:EmployeeApi.BusinessLogic.ProcessEmployee.ProcessSingleEmployeeDeatils(System.String)">
+            <summary>
+             Process single employee details
+            </summary>
+        </member>
+        <member name="M:EmployeeApi.BusinessLogic.ProcessEmployee.GetEmployeeAddressDeatils(System.String)">
+            <summary>
+             Process single employeeAddress details
+            </summary>
+        </member>
+        <member name="M:EmployeeApi.BusinessLogic.ProcessEmployee.SearchEmployeeDeatils(System.String,System.String)">
+            <summary>
+             Search employee details
+            </summary>
+        </member>
+        <member name="M:EmployeeApi.Controllers.EmployeeController.GetEmployees">
+            <summary>
+            Gets a list of Employees
+            </summary>
+            <returns>A list of employee objects.</returns>
+        </member>
+        <member name="M:EmployeeApi.Controllers.EmployeeController.GetEmployeeById(System.String)">
+            <summary>
+            Gets an employee by id
+            </summary>
+            <returns>An employee object.</returns>
+        </member>
+        <member name="M:EmployeeApi.Controllers.EmployeeController.UpdateEmployee(System.String,EmployeeApi.Entities.Employees)">
+            <summary>
+            Update an employee
+            </summary>
+            <returns>No content.</returns>
+        </member>
+        <member name="M:EmployeeApi.Controllers.EmployeeController.PostEmployee(EmployeeApi.Entities.Employees)">
+             <summary>
+             POST an employee details
+             </summary>
+             <remarks>
+             {
+              "employeeId": "e062ed9e1c514b91837a50e74b566437",
+              "firstName": "Uncle",
+              "lastName": "Bob",
+              "emailId": "uncle.bob@gmail.com",
+              "age": 0,
+              "address": {
+                "employeeId": "e062ed9e1c514b91837a50e74b566437",
+                "addressId": "49ff251f-b601-4cec-a102-604d54b3b9e7",
+                "address1": null,
+                "address2": null,
+                "city": "Kol",
+                "zipcode": 0,
+                "state": null,
+                "country": null,
+                "employees": null
+              }
+            }
+             </remarks>
+             <returns>A list of employee objects.</returns>
+        </member>
+        <member name="M:EmployeeApi.Controllers.EmployeeController.DeleteEmp(System.String)">
+            <summary>
+            Delete an employees
+            </summary>
+            <returns>No Content.</returns>
+        </member>
+        <member name="M:EmployeeApi.Controllers.EmployeeController.SearchEmployee(System.String,System.String)">
+            <summary>
+            Search an employee details
+            </summary>
+            <returns>A list of employee objects.</returns>
+        </member>
+        <member name="M:EmployeeApi.DataAccess.ResponseObject.#ctor">
+            <summary>
+            Creates a new <see cref="T:EmployeeApi.DataAccess.ResponseObject"/> instance
+            </summary>
+        </member>
+        <member name="M:EmployeeApi.DataAccess.ResponseObject.#ctor(System.Net.HttpStatusCode)">
+            <summary>
+            Creates a new <see cref="T:EmployeeApi.DataAccess.ResponseObject"/> instance
+            </summary>
+            <param name="statusCode">Sets the <see cref="P:EmployeeApi.DataAccess.ResponseObject.StatusCode"/> property exposed by this class</param>
+        </member>
+        <member name="P:EmployeeApi.DataAccess.ResponseObject.StatusCode">
+            <summary>
+            The <see cref="T:System.Net.HttpStatusCode"/>
+            </summary>
+        </member>
+        <member name="P:EmployeeApi.DataAccess.ResponseObject.Message">
+            <summary>
+            The message
+            </summary>
+        </member>
+        <member name="P:EmployeeApi.DataAccess.ResponseObject.Result">
+            <summary>
+            The actual response object that should be returned
+            </summary>
+        </member>
+    </members>
+</doc>
